@@ -1092,7 +1092,7 @@ cpdefine("inline:com-chilipeppr-workspace-G2-minimill", ["chilipeppr_ready"], fu
             // Gcode List v3
             // OLD v2 http://jsfiddle.net/chilipeppr/F2Qn3/
             // NEW v3 with onQueue/onWrite/onComplete http://jsfiddle.net/chilipeppr/a4g5ds5n/
-            chilipeppr.load("#org-familjenjonsson-gcode-list",
+            chilipeppr.load("#com-chilipeppr-gcode-list",
                 "http://raw.githubusercontent.com/lutorm/widget-gcodelist/master/auto-generated-widget.html",
 
                 function() {
@@ -1100,6 +1100,7 @@ cpdefine("inline:com-chilipeppr-workspace-G2-minimill", ["chilipeppr_ready"], fu
                         ["inline:com-chilipeppr-widget-gcode"],
 
                         function(gcodelist) {
+                            console.log("Widget / Gcode v3 Pmod just got loaded.", gcodelist);
                             gcodelist.init({
                                 lineNumbersOnByDefault: true
                             });
