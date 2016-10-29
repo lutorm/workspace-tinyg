@@ -618,8 +618,8 @@ cpdefine("inline:com-chilipeppr-workspace-G2-minimill", ["chilipeppr_ready"], fu
             // OLD v2 http://jsfiddle.net/chilipeppr/F2Qn3/
             // NEW v3 with onQueue/onWrite/onComplete http://jsfiddle.net/chilipeppr/a4g5ds5n/
             chilipeppr.load("#com-chilipeppr-gcode-list",
-                "http://raw.githubusercontent.com/lutorm/widget-gcodelist/published/auto-generated-widget.html",
-
+                //"https://raw.githubusercontent.com/lutorm/widget-gcodelist/published/auto-generated-widget.html",
+                "https://krypton.familjenjonsson.org/widget-gcodelist/auto-generated-widget.html",
                 function() {
                     cprequire(
                         ["inline:com-chilipeppr-widget-gcode"],
